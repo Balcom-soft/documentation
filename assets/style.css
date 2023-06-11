@@ -399,4 +399,26 @@ a:hover {
 }
 
 
+.accordion-toggle {
+  display: none;
+}
+
+
+.accordion-title {
+  cursor: pointer;
+}
+
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+
+.accordion-toggle:checked ~ .accordion-content {
+  max-height: 1000px;
+}
+
+
 
